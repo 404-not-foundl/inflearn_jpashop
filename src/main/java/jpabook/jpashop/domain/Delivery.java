@@ -9,7 +9,7 @@ public class Delivery {
     @Column(name = "delivery_id", nullable = false)
     private Long id;
 
-    @OneToOne
+    @OneToOne(mappedBy = "delivery")
     private Order order;
 
     @Embedded
